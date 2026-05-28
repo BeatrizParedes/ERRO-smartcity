@@ -93,7 +93,7 @@ export function FormDemanda() {
 
     addDemand(novaDenuncia)
     alert("✅ Demanda salva com sucesso!")
-    router.push("/telaUsuario")
+    router.push("/erro")
   }
 
   return (
