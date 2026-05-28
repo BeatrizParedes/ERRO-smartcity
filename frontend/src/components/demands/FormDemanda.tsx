@@ -112,7 +112,7 @@ export function FormDemanda() {
 
         <select 
           required 
-          disabled={!formData.categoria} 
+          disabled={!formData.categoria}
           className="w-full py-3 border border-gray-300 rounded-full text-center outline-none bg-white text-gray-600 focus:border-purple-500 disabled:bg-gray-50 disabled:cursor-not-allowed cursor-pointer"
           value={formData.problema}
           onChange={(e) => setFormData({...formData, problema: e.target.value})}

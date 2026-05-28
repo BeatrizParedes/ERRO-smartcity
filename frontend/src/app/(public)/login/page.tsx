@@ -69,7 +69,7 @@ export default function LoginPage() {
                 <Text fontSize="sm" mb={1} fontWeight="medium" color="gray.700">Senha</Text>
                 <Input 
                   required 
-                  type="password" 
+                  type="text"
                   placeholder="••••••••" 
                   bg="purple.50" 
                   value={senha} 
