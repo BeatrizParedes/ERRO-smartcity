@@ -112,7 +112,7 @@ export const useDemandStore = create<DemandStore>()(
           if (filters.category && d.category !== filters.category) return false;
           if (filters.region && d.region !== filters.region) return false;
           if (filters.priority && d.priority !== filters.priority) return false;
-          return true;
+          return !filters.status && !filters.category && !filters.region && !filters.priority;
         });
       },
 
