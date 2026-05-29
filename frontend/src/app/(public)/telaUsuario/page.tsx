@@ -166,7 +166,7 @@ export default function TelaUsuarioPage() {
                 <DemandCard
                   key={demand.id}
                   demand={demand}
-                  onViewDetails={handleViewDetails}
+                  onViewDetails={() => handleViewDetails(filteredDemands[0].id)}
                 />
               ))
             ) : (
