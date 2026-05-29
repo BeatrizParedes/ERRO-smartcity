@@ -87,7 +87,7 @@ export default function TelaUsuarioPage() {
             <Link href="/demandas/nova">
               <button 
                 type="button"
-                onClick={(e) => e.preventDefault()} 
+
                 className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all cursor-pointer hover:shadow-lg hover:-translate-y-1 active:scale-95"
               >
                 Criar Nova Solicitação

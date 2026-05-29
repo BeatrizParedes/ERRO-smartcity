@@ -224,7 +224,10 @@ export default function Page() {
                   <DemandCard
                     key={demand.id}
                     demand={demand}
-                    onViewDetails={handleViewDetails}
+                    onViewDetails={(e: React.MouseEvent) => {
+                      e.preventDefault();
+                      handleViewDetails(demand.id);
+                    }}
                   />
                 ))
               ) : (

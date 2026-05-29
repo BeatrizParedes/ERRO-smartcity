@@ -48,7 +48,7 @@ export default function DemandDetailsManagerPage() {
         <div className="text-center">
           <p className="text-xl text-gray-600 mb-4">Demanda não encontrada</p>
           <Button 
-            onClick={handleBack} 
+            
             variant="primary"
             className="cursor-pointer hover:shadow-lg transition-all"
           >
