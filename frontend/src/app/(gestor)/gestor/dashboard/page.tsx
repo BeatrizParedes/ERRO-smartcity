@@ -205,7 +205,7 @@ export default function Page() {
                 <Button 
                   variant="secondary" 
                   size="md" 
-                  onClick={handleResetFilters}
+                  onClick={() => {}}
                   className="whitespace-nowrap"
                 >
                   Limpar
@@ -224,8 +224,8 @@ export default function Page() {
                   <DemandCard
                     key={demand.id}
                     demand={demand}
-                    onViewDetails={(e: React.MouseEvent) => {
-                      e.preventDefault();
+                    onViewDetails={(e: any) => {
+                      e?.preventDefault?.();
                       handleViewDetails(demand.id);
                     }}
                   />
