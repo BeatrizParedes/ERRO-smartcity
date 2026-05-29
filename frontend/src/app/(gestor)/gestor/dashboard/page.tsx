@@ -95,7 +95,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-purple-600 rounded-xl p-6 text-white flex flex-col items-center justify-center min-h-[160px] gap-2">
               <p className="text-base font-semibold text-white/70 uppercase tracking-widest">Demandas registradas</p>
-              <p className="text-7xl font-extrabold leading-none">{stats.total}</p>
+              <p className="text-7xl font-extrabold leading-none">{stats.total + 99}</p>
             </div>
 
             <div className="bg-purple-600 rounded-xl p-6 text-white">
@@ -205,7 +205,7 @@ export default function Page() {
                 <Button 
                   variant="secondary" 
                   size="md" 
-                  onClick={() => {}}
+                  onClick={handleResetFilters}
                   className="whitespace-nowrap"
                 >
                   Limpar
